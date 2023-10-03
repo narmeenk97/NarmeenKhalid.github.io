@@ -107,7 +107,10 @@
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=qGg5jkbxJqSbpu6j" 
+        title="YouTube video player" frameborder="0" allow="accelerometer;
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -119,22 +122,46 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img 
+            srcset="firefox_logo_120.png 120w,
+            Firefox_logo_400.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="Firefox_logo_400.png" 
+            alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+            srcset="mozilla-dinosaur-head-120.png 120w,
+            mozilla-dinosaur-head-400 400W"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="mozilla-dinosaur-head-400.png" 
+            alt="dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img 
+            srcset="firefox_addon_120.png 120w,
+            firefox_addons_400.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="firefox_addons_400.png" 
+            alt="firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img 
+          src="mdn.svg" 
+          alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source 
+            media="(max-width:600px)"
+            srcset="red_panda_600.png.jpg">
+          <img
+          src="redpanda1200.png"
+          alt="red panda">
+        </picture>
       </div>
 
     </main>
