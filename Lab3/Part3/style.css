@@ -3,7 +3,22 @@ Name: Narmeen Khalid
 File: index.html
 Date: 19th October 2023
 creating a webpage for a college 
-/*
+*/
+@font-face {
+  font-family: "calistogaregular";
+  src: url("fonts/calistoga/Calistoga-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alefregular";
+  src: url("fonts/alef/Alef-Bold.ttf") format("ttf"),
+      url("fonts/alef/Alef-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* General setup */
 
 * {
