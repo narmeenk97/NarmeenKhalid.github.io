@@ -1,5 +1,22 @@
+/*
+Name: Narmeen Khalid
+File: style.css
+Date: 19th October 2023
+creating a box using css
+*/
+
 html {
   font-family: sans-serif;
 }
 
 /* Your CSS below here */
+p {
+  width: 200px;
+  height: 50px;
+  line-height: 2.5;
+  text-align:center;
+  /* 1rem = 10px
+    .8 = 8px
+    1.8 = 18rem
+  */ 
+}
