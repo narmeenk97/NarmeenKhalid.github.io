@@ -7,16 +7,27 @@ creating a box using css
 
 html {
   font-family: sans-serif;
+  font-size: 10px;
 }
 
 /* Your CSS below here */
 p {
   width: 200px;
-  height: 50px;
-  line-height: 2.5;
+  line-height: 200px;
+  margin: auto;
   text-align:center;
   /* 1rem = 10px
     .8 = 8px
     1.8 = 18rem
-  */ 
+  */
+  font-size: 1.8rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 8px;
+  border: 1px solid #6f0000;
+  background: #c70000 linear-gradient(to top left, rgba(0, 0, 0, 0.2) 30%, #c70000);
+  box-shadow: 3px 3px 3px rgb(67, 67, 67),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.681),
+              inset -2px -2px 3px rgba(0, 0, 0, 0.66);
+
 }
