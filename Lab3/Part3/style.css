@@ -64,3 +64,28 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+html {
+  font-size: 10px;
+  font-family: "alefregular", serif;
+}
+body {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+header,
+section,
+aside,
+nav,
+footer {
+  font-size: 1.6em;
+  line-height: 1.7;
+}
+header {
+  font-family: "calistogaregular", sans-serif;
+  text-align: center;
+}
+h2 {
+  font-family: "calistogaregular", sans-serif;
+  letter-spacing: 1px;
+}
+/* indenting the paragraphs */
