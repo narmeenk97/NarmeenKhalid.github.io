@@ -88,4 +88,35 @@ h2 {
   font-family: "calistogaregular", sans-serif;
   letter-spacing: 1px;
 }
-/* indenting the paragraphs */
+/* Adding indentation */
+section h2 + p {
+  text-indent: 20px;
+}
+/* Links */
+
+a {
+  color: #aa6666;
+  /* Removing the outline */
+  outline: none;
+}
+a:visited {
+  color: #716363;
+}
+a:focus {
+  color: #d00d0d;
+}
+a:hover {
+  color: #e45151;
+  text-decoration: none;
+}
+a:active {
+  color: #aa6666;
+  text-shadow: 1px 1px 1px #f0aaaa;
+}
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+/* Lists */
