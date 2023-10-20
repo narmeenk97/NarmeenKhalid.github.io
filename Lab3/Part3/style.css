@@ -120,3 +120,21 @@ a[href^="http"] {
 }
 
 /* Lists */
+
+ul {
+  list-style: square;
+}
+
+/* Navigation styling */
+nav ul li {
+  border: 1px solid #aa6666;
+  padding: 1em;
+  margin: 1em;
+  list-style-type: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+
