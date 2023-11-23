@@ -1,3 +1,10 @@
+/*
+	Name: Narmeen Khalid
+	File: main.js
+	Date: 22nd November 2023
+	The javascript file with the added variables and other changes
+	required to make the program work
+*/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
