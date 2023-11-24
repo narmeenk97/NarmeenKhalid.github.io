@@ -7,6 +7,9 @@
 */
 // set up canvas
 
+const para = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -16,7 +19,8 @@ const height = canvas.height = window.innerHeight;
 // function to generate random number
 
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const num =  Math.floor(Math.random() * (max - min + 1)) + min;
+  return num;
 }
 
 // function to generate random RGB color value
@@ -25,6 +29,7 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 class Shape {
+
    constructor(x, y, velX, velY) {
       this.x = x;
       this.y = y;
@@ -32,6 +37,7 @@ class Shape {
       this.velY = velY;
    }
 }
+
 class Ball extends Shape {
 
    constructor(x, y, velX, velY, color, size) {
@@ -87,8 +93,10 @@ class Ball extends Shape {
 }
 
 class EvilCircle extends Shape {
+   
    constructor(x, y) {
       super(x, y, 20, 20);
+      
       this.color = "white";
       this.size = 10;
 
@@ -184,6 +192,7 @@ function loop() {
       ball.collisionDetect();
       }
    }
+   
    evilcircle.draw();
    evilcircle.checkBounds();
    evilcircle.collisionDetect();

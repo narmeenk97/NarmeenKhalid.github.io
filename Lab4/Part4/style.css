@@ -1,3 +1,8 @@
+/*
+  Name: Narmeen Khalid 
+	File: style.css
+	Date: 22nd November 2023
+  */
 html, body {
   margin: 0;
 }
@@ -6,6 +11,8 @@ html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
 }
+
+script {}
 
 body {
   overflow: hidden;
@@ -22,4 +29,11 @@ h1 {
 
   color: transparent;
   text-shadow: 0 0 4px white;
+}
+p {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaa;
 }
