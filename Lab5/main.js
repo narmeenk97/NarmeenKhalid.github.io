@@ -1,3 +1,11 @@
+/*
+	Name: Narmeen Khalid
+	File: main.js
+	Date: 22nd November 2023
+	The javascript file with the added variables and other changes
+	required to make the program work
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
