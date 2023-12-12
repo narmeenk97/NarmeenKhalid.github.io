@@ -1,7 +1,7 @@
 /*
 	Name: Narmeen Khalid
 	File: main.js
-	Date: 22nd November 2023
+	Date: 12th December 2023
 	The javascript file with the added variables and other changes
 	required to make the program work
 */
@@ -12,6 +12,30 @@ const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
+
+showHideBtn.onclick = toggleComments;
+showHideBtn.onkeydown = handleKeyDown;
+
+// defining functions to increase keyboard accessibility 
+
+function toggleComments() {
+  let showHideText = showHideBtn.textContent;
+  if (showHideText === 'Show comments') {
+    showHideBtn.textContent = 'Hide comments';
+    commentWrapper.style.display = 'block';
+  } else {
+    showHideBtn.textContent = 'Show comments';
+    commentWrapper.style.display = 'none';
+  }
+}
+
+function handleKeyDown(event) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    // trigger event when enter or space is pressed 
+    toggleComments();
+    event.preventDefault(); // Prevents scrolling if using space bar 
+  }
+}
 
 showHideBtn.onclick = function() {
   let showHideText = showHideBtn.textContent;
