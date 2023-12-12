@@ -3,7 +3,7 @@
 	File: style.css
 	Date: 22nd November 2023
   */
-  
+
 /* || General setup */
 
 html, body {
@@ -58,7 +58,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgba(128, 0, 128, 0.082);
 }
 
 article, footer, .secondary {
